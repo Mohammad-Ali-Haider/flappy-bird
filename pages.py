@@ -62,9 +62,6 @@ class Gameplay(Page):
         self.pipes = [Pipes()]
 
         self.score_obj = HighScore.retrieve("score.pkl")
-
-        print(self.score_obj)
-
         self.score = 0
 
         if self.score_obj:
