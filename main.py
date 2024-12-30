@@ -43,11 +43,11 @@ class App:
                     bird.jump()
                 elif not keys[pygame.K_SPACE]: bird.jumped = False
             for ground in grounds:
-                ground.move()
+                ground.move(dt)
                 for bird in birds:
-                    ground.collided(bird, grounds)
+                    ground.collided(bird, grounds, pipes)
             for pipe in pipes:
-                pipe.move()
+                pipe.move(dt)
                 for bird in birds:
                     pipe.collided(bird, grounds)
             dt = self.clock.tick(FPS)/1000

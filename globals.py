@@ -15,7 +15,7 @@ BLUE_BIRD_IMGS = [os.path.join(os.curdir, "imgs", "bluebird-upflap.png"), os.pat
 RED_BIRD_IMGS = [os.path.join(os.curdir, "imgs", "redbird-upflap.png"), os.path.join(os.curdir, "imgs", "redbird-midflap.png"), os.path.join(os.curdir, "imgs", "redbird-downflap.png")]
 GRAVITY = 1000
 SPEED = 200
-HIT_BOXES = True
+HIT_BOXES = False
 
 WHITE = (255, 255, 255)
 
